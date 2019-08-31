@@ -29,7 +29,7 @@ setup(
     description="{{ cookiecutter.project_short_description }}",
     entry_points={
         'console_scripts': [
-            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:cli',
+            '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.app.cli:cli',
         ],
     },
     install_requires=requirements,

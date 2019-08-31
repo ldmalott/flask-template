@@ -1,6 +1,6 @@
 import click
 import click_log
-from flask import FlaskGroup
+from flask.cli import FlaskGroup
 
 from . import create_app
 
