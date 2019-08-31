@@ -8,10 +8,16 @@ black = "*"
 isort = "*"
 pytest = "*"
 pytest-cov = "*"
+flake8 = "*"
 
 [packages]
 flask = "*"
 click = "*"
+python-dotenv = "*"
+click-log = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
