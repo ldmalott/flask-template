@@ -3,9 +3,6 @@
 from setuptools import setup, find_packages
 
 
-with open('README.md') as readme_file:
-    readme = readme_file.read()
-
 def read_requirements(filename):
     with open(filename) as f:
         requirements = [
@@ -14,9 +11,11 @@ def read_requirements(filename):
         ]
 
 
+with open('README.md') as readme_file:
+    readme = readme_file.read()
+
 requirements = read_requirements('requirements.txt')
 test_requirements = read_requirements('dev-requirements.txt')
-
 
 setup(
     author="{{ cookiecutter.full_name.replace('\"', '\\\"') }}",
